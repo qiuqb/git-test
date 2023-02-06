@@ -1,0 +1,13 @@
+0206
+
+ssh-keygen -t rsa -C "qiuqb@linkstec.com"
+
+SHA256:RB59wfOmwQUKDmIsmounBbdKkcF1Nhp6mhBeTKo7JpQ qiuqb@linkstec.com
+
+
+ssh-add ~/.ssh/id_rsa
+
+eval `ssh-agent`
+
+
+ssh -T git@github.com
